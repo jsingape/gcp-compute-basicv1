@@ -1,6 +1,6 @@
 provider "google" {
 
-  credentials = file("terrmaster.json")
+#  credentials = file("/home/jsingape/gc_base1/terrmaster.json")
 
   project = "testproject1-317716"
   region  = "us-east4"
