@@ -27,7 +27,8 @@ steps:
           echo "*************************************************"
           terraform init
           terraform validate
-          terraform plan || exit 1
+          terraform plan -out terraform.plan 
+          terraform apply -auto-approve terraform.plan || exit 1
           cd ../../
         done
       fi
