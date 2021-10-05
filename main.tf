@@ -1,12 +1,3 @@
-terraform {
-  backend "remote" {
-    organization = "ishaan"
-
-    workspaces {
-      name = "gcp-testbed"
-    }
-  }
-}
 provider "google" {
 
   credentials = file("terrmaster.json")
